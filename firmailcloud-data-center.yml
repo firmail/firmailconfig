@@ -46,8 +46,8 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
     url: jdbc:mysql://localhost:3306/tigase         # 数据库连接地址
     username: root                                  # 数据库用户名
-    password: '{cipher}AQAQ/We8qzeYfszBxVds0Az0lxcCyx8q6uK9aB6Wlrh1ceYPAikAUjb6R1MDF6yvJU/HAAk1kxUcRzSuxFznD20u8kBGPnfWkcwPPEoQCVSYWPcTAiKavkdv16wF3mMMchCq3oVp8OB01Am/i8ISNoT+AuikzEtXxPuQzmdsStUFLobztAvpgf6tY9LuM1sbQ2bzZn11CXMljdf110F656xq4LHhsnO6XbYq30OZn8r8pxa4dN4FJTEtuwFdffz2AO323uaFKpZBttCqw7pjQBYz2Y9Ja3NfIDe+E2oe+WMOIUE8xdxR86RvwSR2ZRLepI/6fKE69+F4x6ScyW8l1I2HsZCXEMkRt01/dMOSnbkAUEk/ts4VqbE+RmILWPfclg4='
-	 # 数据库连接密码
+    password: '{cipher}AQA7RrWFPSPeBjyfIaE6jMGlDHy6P8KsNceHbxIRmrWHDzMZmSHvf9V+uVvpNrepyczRYYIdAP89d1vZL7FGqvS5rtH/UgygYJ3OrNWBeT20/I/Ttj3LRCbw/ErifucAxLJmryVdXmdas3QWcaGAd7ZDC87T2j8MvSMVplCsHoCjffviMsMoUF/3tejvBuO6LoX56r4z/EV2v+6v5RCCcY/9hWnhn4KUqtqkskwQ2yO8J0tocLQPxj9dtdfoZ/zQfU5d4dI9TAcawvAq3B4P5XanJt/7/Voj/SqijAtCMZF6qpQ9k2qZXh6QP+hGEWh9paxiS38s0dWd6wwroDU/hCgHD8RGLsP/AO/F/CPKsvqbBd+cCdqI6eRMbpKOyzjqYW8='
+
     filters: stat,wall,log4j
     dbcp2:                                          # 进行数据库连接池的配置
       min-idle: 5                                   # 数据库连接池的最小维持连接数    
