@@ -4,23 +4,6 @@ spring:
     - dev
 ---
 spring:
-  profiles: dev
-  application:
-    name: firmailcloud-data-center
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
-    driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
-    url: jdbc:mysql://localhost:3306/tigase         # 数据库连接地址
-    username: root                                  # 数据库用户名
-    password: root                                  # 数据库连接密码
-    filters: stat,wall,log4j
-    dbcp2:                                          # 进行数据库连接池的配置
-      min-idle: 5                                   # 数据库连接池的最小维持连接数    
-      initial-size: 5                               # 初始化提供的连接数
-      max-total: 5                                  # 最大的连接数
-      max-wait-millis: 200                          # 等待连接获取的最大超时时间
----
-spring:
   profiles: test
   application:
     name: firmailcloud-data-center
@@ -29,7 +12,7 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
     url: jdbc:mysql://localhost:3306/tigase         # 数据库连接地址
     username: root                                  # 数据库用户名
-    password: root                                  # 数据库连接密码
+    password: '{cipher}AQAJe2GyXuAv1RuFuGzbzieFHJb/2sjwNP2hmqZS43NtL43+oaV5GyjYdvNmBThWZdgeLdYP/BszaK8sXeABFLO/yBQo1XWekz3Hx9tBTITX+edFVsBk1hnB1H+fJ2Ipk9BQCxXOlGfhf3/xmKYl1WaohC40JlTqRQHvcpXBHeU1j2Ice5X9IH39yIFQWcWj2BLZtikY7HHjdpmfMWa2xWii2Eu8TVYGXoy9YJPIiJqjkxcK38glvJrZcHPRW8lb8fb1nKtOHdERQvc2GpT+sdbJ1ClC0n2Orp643CcvmNAQnmiO3WWUR1BkUHSAc2IuSIkjuv83wbGjWQbMBQeTsI6foTFl8+UaXsoDIxkjA/NHX2dtmAQcvV1R4wZ9iZB1cz8=' # 数据库连接密码
     filters: stat,wall,log4j
     dbcp2:                                          # 进行数据库连接池的配置
       min-idle: 5                                   # 数据库连接池的最小维持连接数    
@@ -38,7 +21,7 @@ spring:
       max-wait-millis: 200                          # 等待连接获取的最大超时时间
 ---
 spring:
-  profiles: wujiafu
+  profiles: dev
   application:
     name: firmailcloud-data-center
   datasource:
@@ -46,7 +29,7 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
     url: jdbc:mysql://localhost:3306/tigase         # 数据库连接地址
     username: root                                  # 数据库用户名
-    password: '{cipher}AQA7RrWFPSPeBjyfIaE6jMGlDHy6P8KsNceHbxIRmrWHDzMZmSHvf9V+uVvpNrepyczRYYIdAP89d1vZL7FGqvS5rtH/UgygYJ3OrNWBeT20/I/Ttj3LRCbw/ErifucAxLJmryVdXmdas3QWcaGAd7ZDC87T2j8MvSMVplCsHoCjffviMsMoUF/3tejvBuO6LoX56r4z/EV2v+6v5RCCcY/9hWnhn4KUqtqkskwQ2yO8J0tocLQPxj9dtdfoZ/zQfU5d4dI9TAcawvAq3B4P5XanJt/7/Voj/SqijAtCMZF6qpQ9k2qZXh6QP+hGEWh9paxiS38s0dWd6wwroDU/hCgHD8RGLsP/AO/F/CPKsvqbBd+cCdqI6eRMbpKOyzjqYW8='
+    password: '{cipher}AQA7RrWFPSPeBjyfIaE6jMGlDHy6P8KsNceHbxIRmrWHDzMZmSHvf9V+uVvpNrepyczRYYIdAP89d1vZL7FGqvS5rtH/UgygYJ3OrNWBeT20/I/Ttj3LRCbw/ErifucAxLJmryVdXmdas3QWcaGAd7ZDC87T2j8MvSMVplCsHoCjffviMsMoUF/3tejvBuO6LoX56r4z/EV2v+6v5RCCcY/9hWnhn4KUqtqkskwQ2yO8J0tocLQPxj9dtdfoZ/zQfU5d4dI9TAcawvAq3B4P5XanJt/7/Voj/SqijAtCMZF6qpQ9k2qZXh6QP+hGEWh9paxiS38s0dWd6wwroDU/hCgHD8RGLsP/AO/F/CPKsvqbBd+cCdqI6eRMbpKOyzjqYW8=' # 数据库连接密码
 
     filters: stat,wall,log4j
     dbcp2:                                          # 进行数据库连接池的配置

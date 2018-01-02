@@ -12,7 +12,7 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
     url: jdbc:mysql://localhost:3306/firmail        # 数据库连接地址
     username: root                                  # 数据库用户名
-    password: root                                  # 数据库连接密码
+    password: '{cipher}AQBH+B9XLnKJZ9QuUCpV7TgEYpCokkbmEtNBMyF3Lf+YlEvVR+9H1oOkuclbS/vCAFnqd6mjzku3FPlXltCNjbTpQ/hBs9aGJKnemyoTclU9EJMJ67B8P1PIqnZr99b1DXKisDfnHPP3hlKlz6hQlxh4ZpugDdXLQPfq/GmtuP7Rvlkz7i4xFznpXmB9jG9WfUIwgP87RVTj/B8QCImEfVJA5Z5+HHK0dWTb0Zw60GtG0O1g76NGbfd0Z42448xtWZd0I9aAyX259et3tQcPVu7K4aT58j+3LyLnaYugiGyLb0x5G7jet2/kYUBcMXqH+68tgTLDZj3OsumzVqTOI421nw74fVx6HXR1AN4BfccUV4oMpAQh6LOmSEbqis1a4MU='                                  # 数据库连接密码
     filters: stat,wall,log4j
     dbcp2:                                          # 进行数据库连接池的配置
       min-idle: 5                                   # 数据库连接池的最小维持连接数    
@@ -29,7 +29,7 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
     url: jdbc:mysql://localhost:3306/firmail         # 数据库连接地址
     username: root                                  # 数据库用户名
-    password: root                                  # 数据库连接密码
+    password: '{cipher}AQBH+B9XLnKJZ9QuUCpV7TgEYpCokkbmEtNBMyF3Lf+YlEvVR+9H1oOkuclbS/vCAFnqd6mjzku3FPlXltCNjbTpQ/hBs9aGJKnemyoTclU9EJMJ67B8P1PIqnZr99b1DXKisDfnHPP3hlKlz6hQlxh4ZpugDdXLQPfq/GmtuP7Rvlkz7i4xFznpXmB9jG9WfUIwgP87RVTj/B8QCImEfVJA5Z5+HHK0dWTb0Zw60GtG0O1g76NGbfd0Z42448xtWZd0I9aAyX259et3tQcPVu7K4aT58j+3LyLnaYugiGyLb0x5G7jet2/kYUBcMXqH+68tgTLDZj3OsumzVqTOI421nw74fVx6HXR1AN4BfccUV4oMpAQh6LOmSEbqis1a4MU='                                  # 数据库连接密码
     filters: stat,wall,log4j
     dbcp2:                                          # 进行数据库连接池的配置
       min-idle: 5                                   # 数据库连接池的最小维持连接数    
